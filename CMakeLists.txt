@@ -9,6 +9,7 @@ add_executable(game-of-life
     game-of-life.cpp
     grid/grid.cpp
     grid/cell.cpp
+    utils/random.cpp
 )
 
 target_link_libraries(game-of-life raylib)

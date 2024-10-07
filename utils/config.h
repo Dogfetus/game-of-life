@@ -1,0 +1,8 @@
+#pragma once
+
+#define WINDOWSIZE 1000
+#define MAPBORDERSIZE 100
+#define CELL_SIZE 10
+#define ROWSIZE (WINDOWSIZE / CELL_SIZE)
+#define COLUMNSIZE (WINDOWSIZE / CELL_SIZE)
+#define TIMESTAMP 0.1

@@ -1,5 +1,5 @@
-### Game of life made in c++
+# Game of life made in c++
 
-## Technologies:
+### Technologies:
 
 - Raylib
