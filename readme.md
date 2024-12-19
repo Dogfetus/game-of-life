@@ -10,18 +10,32 @@ This is a simple implementation of Conway's Game of Life in C++, using the Rayli
 - **Menu and Gameplay Modes**: Start the simulation from a menu screen.
 - **Simulation Controls**:
   - Press **S** to start the simulation.
-  - Hold **B** and use the mouse to draw cells. (not yet implemented)
   - Press **ESC** or **CAPS LOCK** to return to the main menu.
+
+## Planned Features
+
+- Add functionality to draw live cells on the grid using the mouse (press **B**).
 
 ## Installation
 
-### Prerequisites
+### Download the Binary
+
+1. Download the `.sh` file from the [Releases](https://github.com/Dogfetus/game-of-life/releases/tag/v1.0).
+2. Give it executable permissions:
+   ```bash
+   chmod +x game-of-life.sh
+   ./game-of-life.sh
+   ```
+
+### Build From Source
+
+#### Prerequisites
 
 - A C++ compiler (supporting C++11 or later)
 - [Raylib](https://www.raylib.com/) installed on your system
 - CMake (optional, for build automation)
 
-### Build Instructions
+#### Steps to Compile Using CMake
 
 1. Clone this repository:
    ```bash
@@ -29,14 +43,24 @@ This is a simple implementation of Conway's Game of Life in C++, using the Rayli
    cd game-of-life-cpp
    ```
 
-2. Compile the project:
+2. Create a build directory:
    ```bash
-   g++ -std=c++11 -o game main.cpp -lraylib
+   mkdir -p build && cd build
    ```
 
-3. Run the game:
+3. Generate the build files:
    ```bash
-   ./game
+   cmake ..
+   ```
+
+4. Compile the project:
+   ```bash
+   make
+   ```
+
+5. Run the compiled program:
+   ```bash
+   ./game-of-life
    ```
 
 ## Usage
@@ -46,7 +70,6 @@ This is a simple implementation of Conway's Game of Life in C++, using the Rayli
    - Press **ENTER** to switch to the gameplay screen.
 3. In the **Gameplay Screen**:
    - Press **S** to start the Game of Life simulation.
-   - Hold **B** and click to create live cells on the grid. (Not yet implemented)
    - Press **ESC** or **CAPS LOCK** to return to the menu.
 
 ## Code Structure
