@@ -67,7 +67,7 @@ int main(void) {
             break;
 
         case Gameplay:
-            DrawText("Press ESC to go to menu", 10, 10, 20, DARKGRAY);
+            DrawText("Press ESC to go to quit", 10, 10, 20, DARKGRAY);
             DrawText("Press S to start", 10, 30, 20, DARKGRAY);
             DrawText("Press B to draw", 10, 50, 20, DARKGRAY);
 
