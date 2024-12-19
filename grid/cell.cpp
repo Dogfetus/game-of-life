@@ -1,3 +1,4 @@
+#include "../utils/config.h"
 #include "cell.h"
 #include <raylib.h>
 
@@ -11,7 +12,7 @@ void cell::draw() {
     // Draw the filled rectangle
     if (_state)
         DrawRectangle(_position.x, _position.y, CELL_SIZE, CELL_SIZE,
-                      {255, 255, 255, 150});
+                      {255, 255, 255, OPACITY});
     else
         DrawRectangle(_position.x, _position.y, CELL_SIZE, CELL_SIZE, BLACK);
 

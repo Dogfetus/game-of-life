@@ -16,7 +16,7 @@ grid::grid(const size_t &height, const size_t &width, const size_t &border)
         for (size_t j = outside; j < columns + outside; j++) {
             std::unique_ptr<cell> tempcell(
                 new cell(j * CELL_SIZE, i * CELL_SIZE));
-            tempcell->setState(random(1000) % 20 == 0);
+            tempcell->setState(random(1000) % RANDOMNESS == 0);
             _grid.emplace_back(std::move(tempcell));
         }
     }
